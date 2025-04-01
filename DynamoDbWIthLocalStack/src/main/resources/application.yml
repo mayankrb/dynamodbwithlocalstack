@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: DynamoDbWithLocalStack #optional: application name
+  main:
+    allow-bean-definition-overriding: true
+app:
+  dynamodb:
+    region: us-west-2
+    endpoint: http://127.0.0.1:4566
+
+aws:
+  accessKey: test
+  secretKey: test
+
+server:
+  port: 7000
+debug: true
+loggin:
+logging:
+  level:
+    root: DEBUG
